@@ -1,0 +1,38 @@
+--- API REST BÁSICA
+
+API DE DATOS POBLACIONALES A NIVEL MUNDIAL
+	Desarrollar API REST
+	Almacenar en bbdd local datos poblacionales obtenidos a través de la api https://restcountries.com/
+	Actualizar en la base de datos los datos de la api de terceros
+	descargas los datos de la base de datos
+	
+A UTILIZAR: 
+	Java Springboot
+ENDPOINTS: 
+	POST /api/v1/data/country
+	GET /api/v1/data/country
+	
+BBDD
+	Relacional
+	Nombre país y número de habitantes
+JSON
+	devolver datos: 
+		[...{
+			"country": "Bulgaria",
+			"population": 6927288
+			},
+			{
+			"country": "Iceland",
+			"population": 366425
+			}...]
+			
+EXTRA: 
+	 Sistema de Seguridad o autenticación de usuario
+	 Histórico de datos
+	 Registro de trazas (loggin)
+
+	 Uso de buenas prácticas.
+	 Organización y estructura del código.
+	 Optimización en el uso de red.
+	 Evitar duplicidad y fomentar la reutilización de código.
+	 Documentación y/o explicación de implementación (en caso de requerir).
