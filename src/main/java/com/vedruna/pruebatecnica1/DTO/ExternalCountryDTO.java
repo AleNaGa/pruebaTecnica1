@@ -1,4 +1,4 @@
-package com.vedruna.pruebatecnica1.DTO;
+package com.vedruna.pruebatecnica1.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
