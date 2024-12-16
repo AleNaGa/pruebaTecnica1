@@ -86,5 +86,15 @@ public class CountryServiceImpl implements CountryServiceI {
     public String test() {
        return "Hello World";
     }
-    
+
+    @Override
+    public List<CountryDTO> getByName(String name) {
+        try{
+            logger.info("Se han obtenido {} paiíses", countryRepo.findByName(name).size());
+            return countryRepo.findByName(name).stream().map(CountryDTO::new).collect(Collectors.toList());
+        }catch (Exception e) {
+            logger.error("Error al obtener el país: {}",e.getCause(), e);//TRAZA
+            throw new CountrySaveException("Error al obtener el país", e);
+        }
+    }
 }

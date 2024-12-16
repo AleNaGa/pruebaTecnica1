@@ -12,4 +12,6 @@ public interface CountryServiceI {
     public void save();
     //listar los países
     public List<CountryDTO> getAll(int page, int size); //Metodo pageable
+
+    public List<CountryDTO> getByName(String name);
 }
